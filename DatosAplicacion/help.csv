@@ -1,0 +1,9 @@
+step;text
+1;Seleccione los datos deseados.
+2;Especifique las caracteristicas de los ciudadanos.
+3;Provincias: Por defecto se seleccionan todas las provincias, sin embargo puedes definir cual quieres ver.
+4;Centros de Salud: Por defecto se seleccionan todos los Centros de Salud. No en todos los graficos se tienen datos segregados por Centros de Salud.
+5;Centros Hospitalarios: Por defecto se seleccionan todos los Centros Hospitalarios. No en todos los graficos se tienen datos segregados por Centros Hospitalarios.
+6;Tipo de centro: Si el centro pertenece a la zona urbana o rural.
+7;Elija las fechas que desea analizar con el control deslizante. Tambien puede arrastrar el control deslizante para mover la seleccion en intervalos.
+8;Todos los cambios en los criterios de seleccion deben confirmarse haciendo clic en el boton Confirmar.
