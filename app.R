@@ -3381,24 +3381,18 @@ server <- function(input, output,session) {
     
     output$down_tab1_1 <- download_box("Contagios_", grafico_tab1_1())  
     output$down_tab1_2 <- download_box("Hospitalizados_", grafico_tab1_2())
-    output$down_tab1_3 <- download_box("pat_year", grafico_tab1_3())
+    output$down_tab1_3 <- download_box("Fallecidos_", grafico_tab1_3())
     output$down_tab1_4 <- download_box("Vacunaciones_", grafico_tab1_4())
-    output$down_tab2_1 <- download_box("PCRsPositivos_", grafico_tab2_1())
+    
+	output$down_tab2_1 <- download_box("PCRsPositivos_", grafico_tab2_1())
     output$down_tab2_2 <- download_box("PCRsRealizados_", grafico_tab2_2())
+
+	output$down_tab3_1 <- download_box("FallHospitales_", grafico_tab3_1())
+    output$down_tab3_2 <- download_box("AltasHosptiales_", grafico_tab3_2())
     
-    output$down_tab4_1 <- download_box("FallProvinciasy_", grafico_tab4_1())
+    output$down_tab4_1 <- download_box("FallProvincias_", grafico_tab4_1())
+	output$down_tab4_2 <- download_box("FallProvincias2_", grafico_tab4_2())
     output$down_tab4_3 <- download_box("FallProvinciasyEdad_", grafico_tab4_3())
-    
-    output$down_box_5 <- download_box("diagnostics_year", dia_adm())
-    output$down_box_6 <- download_box("diagnostics_timing", plot_dia_timing())
-    output$down_box_7 <- download_box("diagnostics_perform", plot_dia_perform())
-    output$down_box_micro <- download_box("first_isolates", micro_plot())
-    output$down_box_res <- download_box("resistance", isolate_plot())
-    output$down_box_res_ts <- download_box("resistance_time", isolate_ts())
-    output$down_box_ddd_ts <- download_box("ddd time", ddd_ts())
-    output$down_box_dot_ts <- download_box("dot time", dot_ts())
-    output$down_box_los1.0 <- download_box("los_groups", plot_los()) 
-    output$down_box_los2 <- download_box("km-curve", kaplan_los()$plot)
     
     
     
