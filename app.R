@@ -134,15 +134,15 @@ url <- "https://analisis.datosabiertos.jcyl.es/explore/dataset/"
 ## FORMATO JSON -------------------------------------------
 ###	TASA_ENFERMOS - Tasa de enfermos por zonas básicas de salud
 url_j <- "tasa-enfermos-acumulados-por-areas-de-salud/download/?format=json&timezone=Europe/Berlin&lang=es"
-#URL <- fromJSON (paste(url,url_j,sep=""))
-#tasa_enfermos <- URL$fields
-tasa_enfermos <- fromJSON("DatosPublicos/tasa-enfermos-acumulados-por-areas-de-salud.json")
+URL <- fromJSON (paste(url,url_j,sep=""))
+tasa_enfermos <- URL$fields
+#tasa_enfermos <- fromJSON("DatosPublicos/tasa-enfermos-acumulados-por-areas-de-salud.json")
 
 ###	TASA_MORTALIDAD - Tasa de mortalidad COVID por zonas básicas de salud
 url_j <- "tasa-mortalidad-covid-por-zonas-basicas-de-salud/download/?format=json&timezone=Europe/Berlin&lang=es"
-#URL <- fromJSON (paste(url,url_j,sep=""))
-#tasa_mortalidad <- URL$fields
-tasa_mortalidad <- fromJSON("DatosPublicos/tasa-mortalidad-covid-por-zonas-basicas-de-salud.json")
+URL <- fromJSON (paste(url,url_j,sep=""))
+tasa_mortalidad <- URL$fields
+#tasa_mortalidad <- fromJSON("DatosPublicos/tasa-mortalidad-covid-por-zonas-basicas-de-salud.json")
 
 ###	FALLECIDOS - Mortalidad por COVID-19 por tramos de edad y sexo
 url_j <- "mortalidad-por-tramos-de-edad-y-sexo/download/?format=json&timezone=Europe/Berlin&lang=es"
