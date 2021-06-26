@@ -167,9 +167,9 @@ vacunas <- URL$fields
 ## AUX FORMATO JSON ---------------------------------------
 ###	TASA_MORTALIDAD - Tasa de mortalidad por zonas básicas de salud
 url_j <- "tasa-mortalidad-por-centros-de-salud/download/?format=json&timezone=Europe/Madrid&lang=es"
-#URL <- fromJSON (paste(url,url_j,sep=""))
-#tasa_mortalidad_T <- URL$fields
-tasa_mortalidad_T <- fromJSON("DatosPublicos/tasa-mortalidad-por-centros-de-salud.json")
+URL <- fromJSON (paste(url,url_j,sep=""))
+tasa_mortalidad_T <- URL$fields
+#tasa_mortalidad_T <- fromJSON("DatosPublicos/tasa-mortalidad-por-centros-de-salud.json")
 
 
 rm(URL)
